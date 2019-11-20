@@ -1,0 +1,190 @@
+
+{
+	"mappings" :
+	{
+		"pubmedarticle" :
+		{
+			"properties" :
+			{
+				"Abstract" :
+				{
+					"type" : "text",
+					"fields" :
+					{
+						"keyword" :
+						{
+							"type" : "keyword",
+							"ignore_above" : 256
+						}
+					}
+				},
+				"ArticleTitle" :
+				{
+					"type" : "text",
+					"fields" :
+					{
+						"keyword" :
+						{
+							"type" : "keyword",
+							"ignore_above" : 256
+						}
+					}
+				},
+
+				"AuthorList" :
+				{
+					"type" : "text",
+					"fields" :
+					{
+						"keyword" :
+						{
+							"type" : "keyword",
+							"ignore_above" : 256
+						}
+					}
+				},
+				"ChemicalList" :
+				{
+					"type" : "nested",
+					"properties" :
+					{
+						"NameOfSubstance" :
+						{
+							"type" : "text",
+							"fields" :
+							{
+								"keyword" :
+								{
+									"type" : "keyword",
+									"ignore_above" : 256
+								}
+							}
+						},
+						"RegistryNumber" :
+						{
+							"type" : "keyword"
+						},
+						"UI" :
+						{
+							"type" : "keyword"
+						}
+					}
+				},
+				"DateCompleted" :
+				{
+					"type" : "date"
+				},
+				"Language" :
+				{
+					"type" : "keyword"
+				},
+				"MedlineJournalInfo" :
+				{
+					"properties" :
+					{
+						"Country" :
+						{
+							"type" : "text",
+							"fields" :
+							{
+								"keyword" :
+								{
+									"type" : "keyword",
+									"ignore_above" : 256
+								}
+							}
+						},
+						"ISSNLinking" :
+						{
+							"type" : "keyword"
+						},
+						"MedlineTA" :
+						{
+							"type" : "text",
+							"fields" :
+							{
+								"keyword" :
+								{
+									"type" : "keyword",
+									"ignore_above" : 256
+								}
+							}
+						},
+						"NlmUniqueID" :
+						{
+							"type" : "keyword"
+						}
+					}
+				},
+
+				"MeshHeadingList" :
+				{
+					"type" : "nested",
+					"properties" :
+					{
+						"MajorTopicYN" :
+						{
+							"type" : "keyword"
+						},
+						"QualifierNameList" :
+						{
+							"type" : "nested",
+							"properties" :
+							{
+								"MajorTopicYN" :
+								{
+									"type" : "keyword"
+								},
+								"UI" :
+								{
+									"type" : "keyword"
+								},
+								"desc" :
+								{
+									"type" : "text",
+									"fields" :
+									{
+										"keyword" :
+										{
+											"type" : "keyword",
+											"ignore_above" : 256
+										}
+									}
+								}
+							}
+						},
+						"Type" :
+						{
+							"type" : "keyword"
+						},
+						"UI" :
+						{
+							"type" : "keyword"
+						},
+						"desc" :
+						{
+							"type" : "text",
+							"fields" :
+							{
+								"keyword" :
+								{
+									"type" : "keyword",
+									"ignore_above" : 256
+								}
+							}
+						}
+					}
+				},
+				"PMID" :
+				{
+					"type" : "keyword"
+				},
+				"PubModel" :
+				{
+					"type" : "keyword"
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+MEDLINE SAILOR - hubS dAta vIsuaLisatiOn seRvice
+
+This project has received funding from the European Union's Horizon 2020
+research and innovation programme under grant agreement No 727721.
+
+Copyright 2017-2019 Quintelligence d.o.o.
+
+I. Used Software
+
+This product uses the following software with corresponding licenses:
+
+        python libraries:
+                glob
+                os
+                datetime
+                sys
+                csv
+                json
+                xml.etree.ElementTree           BDS
+                Elasticsearch                   Apache 2.0
+cURL                                            MIT/X derivate license
