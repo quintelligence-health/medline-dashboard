@@ -40,7 +40,7 @@ For detailed installation of Elasticsearch and Kibana check the following instru
 
 ## Documentation
 
-- [Examples, user stories and demonstrations](http://midas.quintelligence.com/midas-influenzanet-demos)
+- [Examples, user stories and demonstrations](http://midas.quintelligence.com/medline_demos)
 - [Architecture](https://github.com/qmidas/qmidas-medline/wiki/Architecture)
 - [User Guide](https://github.com/qmidas/qmidas-medline/wiki/UserGuide)
 - [Reference research paper](http://ailab.ijs.si/dunja/SiKDD2018/Papers/PitaCosta.pdf)
